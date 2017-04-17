@@ -178,11 +178,6 @@ export default class ToastrBox extends React.Component {
 
     return (
       <div>
-        <div className="toastr-left-container">
-          <div className="holder">
-            {this.renderIcon()}
-          </div>
-        </div>
         {options.status && type === 'light' && <div className={classnames('toastr-status', options.status)}/>}
         <div className="toastr-middle-container">
           {title && <div className="title">{title}</div>}

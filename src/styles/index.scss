@@ -15,7 +15,7 @@ body.toastr-confirm-active {
     width: $toastr-width;
     position: fixed;
     z-index: 99999999;
-    padding: 0 $defaultSpace;
+    padding: 0;
   }
 
   .top-left, .top-right, .top-center {
@@ -53,9 +53,8 @@ body.toastr-confirm-active {
   .toastr {
     background-color: #fcfcfc;
     width: 100%;
-    min-height: 70px;
     overflow: hidden;
-    margin: $defaultSpace 0;
+    margin: 0 0 $defaultSpace;
     border-radius: 4px;
     position: relative;
     z-index: 2;
@@ -120,13 +119,12 @@ body.toastr-confirm-active {
     }
 
     .toastr-middle-container {
-      width: 65%;
-      margin-left: 80px; 
+      width: 100%;
       position: relative;
       float: left;
-      font-family: Arial, Helvetica, sans-serif, sans-serif;
+      font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;;
       font-size: 1em;
-      text-align: left;
+      text-align: center;
       padding: 10px 5px;
       
       .title {
@@ -142,6 +140,8 @@ body.toastr-confirm-active {
 
     .close-toastr {
       width: 10%;
+      min-width: 25px;
+      max-width: 75px;
       height: 100%;
       position: absolute;
       top: 0;
